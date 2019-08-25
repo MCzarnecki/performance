@@ -1,0 +1,18 @@
+<div class="users-view">
+   <div class="users-header">
+       <header>
+           Users
+       </header>
+   </div>
+    <div class="users-list">
+        <div class="add-user-form">
+            <input [(ngModel)]="user">
+            <button (click)="addUser()">Add user</button>
+        </div>
+        <ul>
+            <li *ngFor="let user of users">
+                {{user.name}}
+            </li>
+        </ul>
+    </div>
+</div>

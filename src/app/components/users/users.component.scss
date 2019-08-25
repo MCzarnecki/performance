@@ -1,0 +1,40 @@
+.users-view {
+    height: 100%;
+    max-height: 90vh;
+    display: grid;
+    grid-template-areas: "users-header"
+        "users-list";
+    grid-template-rows: 1fr 10fr;
+}
+
+.users-header {
+    grid-area: users-header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & > header {
+        font-size: 4vh;
+        font-style: italic;
+    }
+}
+
+.users-list {
+    grid-area: users-list;
+    font-size: 2vh;
+}
+.add-user-form {
+    padding: 1em;
+    white-space: nowrap;
+    & > input {
+        margin-right: 0.5em;
+        font-size: 2vh;
+
+    }
+
+    & > button {
+        font-size: 2vh;
+
+    }
+}
+

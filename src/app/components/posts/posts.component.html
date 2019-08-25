@@ -1,0 +1,18 @@
+<div class="posts-view">
+   <div class="posts-header">
+       <header>The list of the posts</header>
+   </div>
+   <div class="posts-list">
+   <div class="post" *ngFor="let post of posts">
+       <header class="post-header">
+         {{ post.name }}  
+       </header>
+       <article class="post-body">
+           <i>{{ post.description }}</i>
+       </article>
+       <footer class="post-rating">
+            Popularity: <i>{{ getStatus(post) }}</i>
+       </footer>
+   </div>
+   </div>
+</div>

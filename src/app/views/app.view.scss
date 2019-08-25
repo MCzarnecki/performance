@@ -1,0 +1,26 @@
+.views-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "space-left header header space-right"
+        "space-left posts users space-right";
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 2fr 6fr 2fr 2fr;
+}
+
+.app-header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #314152;
+    color: white;
+}
+
+.posts {
+    grid-area: posts;
+}
+
+.users {
+    grid-area: users;
+}
