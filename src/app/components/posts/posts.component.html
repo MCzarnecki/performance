@@ -11,7 +11,8 @@
            <i>{{ post.description }}</i>
        </article>
        <footer class="post-rating">
-            Popularity: <i>{{ getStatus(post) }}</i>
+            <!-- Popularity: <i>{{ getStatus(post) }}</i> -->
+            Popularity: <i>{{ post.status | postStatus }}</i>
        </footer>
    </div>
    </div>

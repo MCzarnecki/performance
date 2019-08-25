@@ -3,7 +3,7 @@
           <performance-header></performance-header>
     </div>
     <div class="posts">
-        <performance-posts [posts]="posts$ | async"></performance-posts>
+        <performance-posts [posts]="posts$ | async" [dummy]="dummy"></performance-posts>
     </div>
     <div class="users">
         <performance-users [users]="users$ | async" (userAdded)="addUser($event)"></performance-users>

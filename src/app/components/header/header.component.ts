@@ -11,8 +11,8 @@ export class HeaderComponent {
 
     constructor() {
         this.currentTime = new Date();
-        setInterval(() => { 
-            this.currentTime = new Date();
-        }, 1000);
+        // setInterval(() => { 
+        //     this.currentTime = new Date();
+        // }, 1000);
     }
 }

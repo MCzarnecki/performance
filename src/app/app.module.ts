@@ -9,13 +9,15 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
+import { PostStatusPipe } from './pipes/post-status.pipe';
 @NgModule({ 
   declarations: [
     AppComponent,
     AppViewComponent,
     PostsComponent,
     UsersComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostStatusPipe
   ],
   imports: [
     BrowserModule,

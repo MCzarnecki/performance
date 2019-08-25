@@ -13,10 +13,13 @@ import { UserService } from '../components/users/users.service';
 export class AppViewComponent implements OnChanges {
     posts$: Observable<Array<Post>>;
     users$: Observable<Array<User>>;
+    dummy: string;
 
     constructor(private postService: PostsService, private usersService: UserService) {
         this.posts$ = this.postService.getPosts();
         this.users$ = this.usersService.getUsers();
+        this.dummy = 'aaaa';
+        setTimeout(() => this.dummy = 'bbbb', 5000);
     }
 
     ngOnChanges(changes: SimpleChanges): void {
